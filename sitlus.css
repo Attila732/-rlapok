@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+header{
+    background-color: orange;
+}
+nav{
+    background-color: turquoise;
+    
+}
+article{
+    background-color: bisque;
+}
+header h1{
+    text-align: center;
+}
+
+nav { grid-area: n;}
+header { grid-area: h; }
+article { grid-area: a; }
+aside { grid-area: s; }
+footer { grid-area: f; }
+
+main {
+  display: grid;
+  grid-template-areas:
+    "h h h h h h "
+    "n n n n n n " 
+    "a a a a a a "
+    "s s s s s s "
+    "f f f f f f "
+    
+    ;
+}
+
